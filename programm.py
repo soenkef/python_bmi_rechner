@@ -1,9 +1,8 @@
-print("Hallo Welt")
+print("BMI-Rechner")
 
-age1 = input("Bitte gebe dein Alter von Person A ein: ")
-age2 = input("Bitte gebe dein Alter von Person B ein: ")
-print(age1)
-print(age2)
+weight = input("Bitte gebe dein Gewicht in KG wie z.B. 84.2 kg ein: ")
+height = input("Bitte gebe deine Körpergröße im Meter wie z.B. 1.82 ein: ")
 
-print("Person A + Person B")
-print(float(age1) + float(age2))
+result = (float(weight) / (float(height) * float(height)))
+
+print("Dein BMI liegt bei: " + str(result))
